@@ -15,7 +15,7 @@ Esta é a minha solução para o desafio [Article preview component challenge on
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://user-images.githubusercontent.com/80429145/119054327-d0dbc580-b99d-11eb-9c39-cc5bcd0e74dc.png)
 
 ### Links
 
