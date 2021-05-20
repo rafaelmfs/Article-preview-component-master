@@ -1,0 +1,286 @@
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    max-height: 900px;
+
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 800px;
+    height: 306px;
+
+    display: grid;
+    grid-template-columns: 38% 60%;
+    gap: 2%;
+
+    background: #FFF;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+.card .drawers{
+    background: url(images/drawers.jpg) no-repeat;
+    background-size: cover;
+
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    
+}
+
+.card .content{
+    padding: 20px 25px 0px;
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.content h2.title{
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.content p.description{
+    font-size: 1.5rem;
+}
+
+.dark{
+    color: hsl(217, 19%, 35%);
+   
+}
+
+.grayish-blue{
+    color: hsl(214, 17%, 51%);
+}
+
+.bottom-content{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+
+}
+
+.profile {
+    display: flex;
+}
+
+.img-profile{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    align-self: center;
+    margin-right: 20px;
+}
+
+.profile-name p{
+    margin: 4px;
+}
+
+.profile-name p.dark{
+    font-weight: bold;
+}
+
+.tooltip{
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+
+    margin-left: auto;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    height: 40px;
+
+    line-height: 5px;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+
+    background-color: hsl(217, 19%, 35%);
+    color: hsla(210, 46%, 95%, 0.5);
+
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 1;
+
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.534);
+  }
+  .redes-sociais{
+      margin-left: 16px;
+  }
+
+  .redes-sociais svg{
+      margin: 5px;
+  }
+
+  .tooltip.on, .tooltip:hover{
+      background: hsl(214, 17%, 51%);
+      cursor: pointer;
+  }
+
+  .tooltip.on .tooltiptext{
+    visibility: visible;
+    margin-bottom: 130px;
+    transition: 400ms;
+  }
+
+  .tooltip.on svg path, .tooltip:hover svg path{
+    fill: white;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+   
+  }
+
+  .tooltip-mobile {
+      display: none;
+  }
+
+  @media(max-width:850px){
+    html{
+        font-size: 50%;
+    }
+
+    body{
+        background-color: hsl(210, 46%, 95%);
+    }
+
+    .card{
+        width: 90%;
+    }
+
+  }
+
+  @media(max-width:700px){
+    html{
+        font-size: 45%;
+    }
+
+    .container{
+        width: 100%;
+
+    }
+    .card{
+        width: 80%;
+        height: 80%;
+
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+
+        box-sizing: border-box;
+    }
+
+    .card .drawers{
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card .content{
+        padding: 0;
+        margin: 0;
+
+        grid-template-rows: 75% auto;
+    }
+    .top-content{
+        padding: 30px;
+    }
+
+
+    .profile{
+        padding-left: 30px;
+    }
+
+    .tooltip{
+        position: absolute;
+        right: 12%;
+    }
+
+    .off{
+        display: none;
+    }
+    .tooltip.on .tooltiptext{
+        display: none;
+    }
+
+    .tooltip-mobile.on{
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        background-color:hsl(217, 19%, 35%);
+
+        margin-top: 2%;
+        padding: 12px;
+
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+              
+
+    }
+
+    .tooltip-mobile p{
+
+        line-height: 5px;
+        letter-spacing: 3px;
+        font-size: 1.7rem;
+
+        color: hsla(210, 46%, 95%, 0.5);
+
+        margin-left: 5%;
+    }
+
+
+    footer.attribution{
+        position: static;
+
+    }
+
+  }
+
